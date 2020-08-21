@@ -11,33 +11,40 @@ if (votingAge > 18) {
 let firstName = 'Joey';
 let lastName = 'Cristina';
 
-if (lastName === 'Cristina'){
-firstName = 'Joseph';
+if (lastName === 'Cristina') {
+    firstName = 'Joseph';
 }
 
 console.log(firstName, lastName);
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
+Number('1999');
 
+//note: do not understand the usecase. i also cannot get '1999' to act as a number. if I go '1999' + 10, the result is 199910.
 
 //Task d: Write a function to multiply a*b 
 
+function times(a, b) {
+    return a * b;
+}
 
-
-
+console.log(times(4, 5));
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
+function dogYears(humanYears) {
+    return humanYears * 7;
+}
 
-
-
+console.log(dogYears(33));
 
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
-//takes weight in pounds and age in years (note if the dog is a puppy the age will be a decimal) and returns the number of pounds of raw food to feed in a day.
+//takes weight in pounds and age in years (note if the dog is a puppy the age will be a decimal) and returns the number of pounds of raw 
+//food to feed in a day.
 
 //feeding requirements
 // adult dogs at least 1 year 
@@ -51,9 +58,8 @@ console.log(firstName, lastName);
 // 4 - 7 months 5% of their body weight 
 // 7 - 12 months 4% of their body weight
 
-// when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
-
-
+// when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your 
+//result should be 0.44999999999999996
 
 
 
@@ -84,7 +90,8 @@ console.log(firstName, lastName);
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
-// the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
+// the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda 
+//on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
 
 
 
