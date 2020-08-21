@@ -63,19 +63,19 @@ console.log(dogYears(33));
 
 function dogFoodLbs(dogYears, dogWeight) {
     if (dogYears >= 1 && dogWeight < 6) {
-        return (dogWeight * .05);
-    } else if (dogYears >= 1 && dogWeight >=6)
-        return (dogWeight * .04);
-    else if (dogYears >= 1 && dogWeight >= 11)
-        return (dogWeight * .03);
-    else if (dogYears >= 1 && dogWeight > 15)
+        return dogWeight * .05;
+    } else if (dogYears >= 1 && dogWeight >= 6)
+        return dogWeight * .04;
+    else if (dogYears >= 1 && dogWeight <= 11)
+        return dogWeight * .03;
+    else if (dogYears >= 1 && dogWeight >= 15)
         return dogWeight * .02;
-    else if (dogYears >= (1 / 12)*2 && dogYears < (1 / 12)*4)
+    else if (dogYears >= ((1 / 12) * 2) && dogYears < ((1 / 12) * 4))
         return dogWeight * .1;
-    else if (dogYears >= 4 && dogYears < 7)
+    else if (dogYears >= ((1 / 12) * 4) && dogYears < ((1 / 12) * 7))
         return dogWeight * .05;
-    else if (dogYears >= 7 && dogYears <= 12)
-        return dogWeight * .05;
+    else(dogYears >= ((1 / 12) * 7) && dogYears < 1)
+    return dogWeight * .05;
 }
 
 console.log(dogFoodLbs(1, 15));
