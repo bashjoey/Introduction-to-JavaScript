@@ -61,7 +61,24 @@ console.log(dogYears(33));
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your 
 //result should be 0.44999999999999996
 
+function dogFoodLbs(dogYears, dogWeight) {
+    if (dogYears >= 1 && dogWeight < 6) {
+        return (dogWeight * .05);
+    } else if (dogYears >= 1 && dogWeight >=6)
+        return (dogWeight * .04);
+    else if (dogYears >= 1 && dogWeight >= 11)
+        return (dogWeight * .03);
+    else if (dogYears >= 1 && dogWeight > 15)
+        return dogWeight * .02;
+    else if (dogYears >= (1 / 12)*2 && dogYears < (1 / 12)*4)
+        return dogWeight * .1;
+    else if (dogYears >= 4 && dogYears < 7)
+        return dogWeight * .05;
+    else if (dogYears >= 7 && dogYears <= 12)
+        return dogWeight * .05;
+}
 
+console.log(dogFoodLbs(1, 15));
 
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
