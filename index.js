@@ -63,8 +63,8 @@ console.log(dogYears(33));
 
 function dogFoodLbs(dogYears, dogWeight) {
     if (dogYears >= 1 && dogWeight < 6) {
-        return dogWeight * .05;
-    } else if (dogYears >= 1 && dogWeight >= 6)
+        return (dogWeight * .05;
+    } else if (dogYears >= 1 && 10 >= dogWeight >= 6)
         return dogWeight * .04;
     else if (dogYears >= 1 && dogWeight <= 11)
         return dogWeight * .03;
