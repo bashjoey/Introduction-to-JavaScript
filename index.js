@@ -98,7 +98,7 @@ function dogFoodLbs(dogYears, dogWeight) {
     }
 }
 
-console.log(dogFoodLbs(.5, 10));
+console.log(dogFoodLbs(1, 15));
 
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
@@ -107,7 +107,9 @@ console.log(dogFoodLbs(.5, 10));
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-
+function game(){
+    let odds = Math.random()
+}
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
