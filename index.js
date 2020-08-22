@@ -61,24 +61,44 @@ console.log(dogYears(33));
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your 
 //result should be 0.44999999999999996
 
+// function dogFoodLbs(dogYears, dogWeight) {
+//     if (dogYears >= 1 && dogWeight < 6) {
+//         return dogWeight * .05;
+//     } else if (dogYears >= 1 && dogWeight <= 11){
+//         return dogWeight * .03;
+//     } else if (dogYears >= 1 && dogWeight >= 15){
+//         return dogWeight * .02;
+//     } else if (dogYears >= ((1 / 12) * 2) && dogYears < ((1 / 12) * 4)){
+//         return dogWeight * .1;
+//     } else if (dogYears >= ((1 / 12) * 4) && dogYears < ((1 / 12) * 7)){
+//         return dogWeight * .05;
+//     } else if (dogYears >= ((1 / 12) * 7) && dogYears < 1){
+//     return dogWeight * .05;
+// }}
+
 function dogFoodLbs(dogYears, dogWeight) {
-    if (dogYears >= 1 && dogWeight < 6) {
-        return (dogWeight * .05;
-    } else if (dogYears >= 1 && 10 >= dogWeight >= 6)
-        return dogWeight * .04;
-    else if (dogYears >= 1 && dogWeight <= 11)
-        return dogWeight * .03;
-    else if (dogYears >= 1 && dogWeight >= 15)
-        return dogWeight * .02;
-    else if (dogYears >= ((1 / 12) * 2) && dogYears < ((1 / 12) * 4))
-        return dogWeight * .1;
-    else if (dogYears >= ((1 / 12) * 4) && dogYears < ((1 / 12) * 7))
-        return dogWeight * .05;
-    else(dogYears >= ((1 / 12) * 7) && dogYears < 1)
-    return dogWeight * .05;
+    if (dogYears >= 1) {
+        if (dogWeight > 15) {
+            return dogWeight * .02;
+        } else if (dogWeight >= 11) {
+            return dogWeight * .03;
+        } else if (dogWeight >= 6) {
+            return dogWeight * .04;
+        } else if (dogWeight > 0) {
+            return dogWeight * .05;
+        }
+    } else if (dogYears < 1) {
+        if (dogYears > ((1 / 12) * 7)) {
+            return dogWeight * .04;
+        } else if (dogYears > ((1 / 12) * 4)) {
+            return dogWeight * .05;
+        } else if (dogYears > ((1 / 12) * 2)) {
+            return dogWeight * .1;
+        }
+    }
 }
 
-console.log(dogFoodLbs(1, 15));
+console.log(dogFoodLbs(.5, 10));
 
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
@@ -86,7 +106,6 @@ console.log(dogFoodLbs(1, 15));
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
-
 
 
 
