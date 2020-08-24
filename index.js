@@ -107,23 +107,32 @@ console.log(dogFoodLbs(1, 15));
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-function game(){
-    let odds = Math.random()
+function game() {
+    let random = Math.random();
+    if random < .333 {
+        console.log('rock');
+    }
+    if random > .333 && random < .666 {
+        console.log('paper');
+    }
+    if random > .666 {
+        console.log('scissors');
+    }
 }
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
-
-
+function (kilos) {
+    let miles = kilos / 1.609344;
+}
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
 
-
-
-
+function (centimenters) {
+    let feet = centimeters / 30.48;
+}
 
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
@@ -131,9 +140,7 @@ function game(){
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda 
 //on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
 
-
-
-
+function annoyingSong
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
