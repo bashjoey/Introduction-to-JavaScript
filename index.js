@@ -108,21 +108,25 @@ console.log(dogFoodLbs(1, 15));
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
 
-function choice(rock, paper, scissors) {
-    let random = Math.random();
-    if (choice = rock) {
+let rock = 'rock';
+let paper = 'paper';
+let scissors = 'scissors';
+const random = Math.random();
+
+function game(choice) {
+    if (choice === rock) {
         if (random <= .999 && random > .666) {
             return rock = true;
         } else {
             return rock = false;
         }
-    } else if (choice = paper) {
+    } else if (choice === paper) {
         if (random <= .666 && random > .333) {
             return paper = true;
         } else {
             return paper = false;
         }
-    } else if (choice = scissors) {
+    } else if (choice === scissors) {
         if (random <= .333 && random > 0) {
             return scissors = true;
         } else {
@@ -131,7 +135,7 @@ function choice(rock, paper, scissors) {
     }
 }
 
-console.log(choice(rock));
+console.log(game('rock'));
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
