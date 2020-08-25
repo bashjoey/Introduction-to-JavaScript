@@ -107,7 +107,6 @@ console.log(dogFoodLbs(1, 15));
 // use math.random to determine the computers choice
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
 
-
 let rock = 'rock';
 let paper = 'paper';
 let scissors = 'scissors';
@@ -165,7 +164,7 @@ console.log(measure(1));
 
 // function annoyingSong(bottlesOfSoda) {
 //     for (; bottlesOfSoda >= 1; bottlesOfSoda--) {
-//         console.log(bottlesOfSoda + ' bottles of soda on the wall, ' + bottlesOfSoda + ' bottles of soda! take one down, pass it around, ' + bottlesOfSoda + 'bottles of soda on the wall');
+//         console.log(bottlesOfSoda + ' bottles of soda on the wall, ' + bottlesOfSoda + ' bottles of soda! take one down, pass it around, ' + bottlesOfSoda + ' bottles of soda on the wall');
 //     }
 // }
 
@@ -174,12 +173,13 @@ console.log(measure(1));
 // template string? hmm
 
 function annoyingSong(bottlesOfSoda) {
+
     for (; bottlesOfSoda >= 1; bottlesOfSoda--) {
         console.log(`${bottlesOfSoda} bottles of soda on the wall, ${bottlesOfSoda} bottles of soda! take one down, pass it around, ${bottlesOfSoda} bottles of soda on the wall`);
     }
 }
 
-console.log(annoyingSong(10));
+annoyingSong(10);
 
 /************************************************************** Task 7 **************************************************************/
 // Grade Calculator
@@ -190,9 +190,20 @@ console.log(annoyingSong(10));
 // 60s should be D
 // and anything below 60 should be F
 
-
-
-
+function grade(score) {
+    if (score >= 90) {
+        return 'A';
+    } else if (score >= 80) {
+        return 'B';
+    } else if (score >= 70) {
+        return 'C';
+    } else if (score >= 60) {
+        return 'D';
+    } else {
+        return 'F';
+    }
+}
+console.log(grade(90));
 
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
