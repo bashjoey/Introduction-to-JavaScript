@@ -212,8 +212,37 @@ console.log(grade(90));
 
 
 
-
-
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
+
+// just a placeholder for tomorrow
+
+// let rock = 'rock';
+// let paper = 'paper';
+// let scissors = 'scissors';
+// const random = Math.random();
+
+// function game(choice) {
+//     if (choice === rock) {
+//         if (random <= .999 && random > .666) {
+//             return rock = true;
+//         } else {
+//             return rock = false;
+//         }
+//     } else if (choice === paper) {
+//         if (random <= .666 && random > .333) {
+//             return paper = true;
+//         } else {
+//             return paper = false;
+//         }
+//     } else if (choice === scissors) {
+//         if (random <= .333 && random > 0) {
+//             return scissors = true;
+//         } else {
+//             return scissors = false;
+//         }
+//     }
+// }
+
+// console.log(game('rock'));
