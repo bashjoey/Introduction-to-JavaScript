@@ -141,15 +141,21 @@ console.log(game('rock'));
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-// function (kilos) {
-//     let miles = kilos / 1.609344;
-// }
+function distance(kilometers) {
+    let miles = 1.609344;
+    return kilometers / miles;
+}
+
+console.log(distance(1.609344));
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
 
-// function (centimenters) {
-//     let feet = centimeters / 30.48;
-// }
+function measure(feet) {
+    let centimeters = 30.48;
+    return feet * centimeters;
+}
+
+console.log(measure(1));
 
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
@@ -157,16 +163,16 @@ console.log(game('rock'));
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda 
 //on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
 
-// function annoyingSong
+function annoyingSong
 
 /************************************************************** Task 7 **************************************************************/
-//Grade Calculator
-//write a javaScript program that takes a mark out of 100 and returns a corisponding letter grade 
-//90s should be A 
-//80s should be B 
-//70s should be Cs 
-//60s should be D 
-//and anything below 60 should be F
+// Grade Calculator
+// write a javaScript program that takes a mark out of 100 and returns a corisponding letter grade 
+// 90s should be A 
+// 80s should be B 
+// 70s should be Cs 
+// 60s should be D 
+// and anything below 60 should be F
 
 
 
