@@ -19,7 +19,7 @@ console.log(firstName, lastName);
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-Number('1999');
+console.log(Number('1999'));
 
 //note: do not understand the usecase. i also cannot get '1999' to act as a number. if I go '1999' + 10, the result is 199910.
 
@@ -210,39 +210,37 @@ console.log(grade(90));
 // Hint - you may need to study tomorrow's traning kit on arrays
 // try looking up the .includes() method
 
+const vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
 
+function vowelNums(str) {
+    let count = 0;
+    for (let letters of str) {
+        if (vowels.includes(letters)) {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(vowelNums('joey CRISTINA'));
+
+// function vowelNums(str) {
+//     let count = 0;
+//     for (let num of str) {
+//         if (vowels.includes(num)) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// vowelNums('hey dude');
+
+// function vowelsNum(input) {
+//     let i = 0;
+//     for (if input vowel.includes(); i++)
+//         return i;
+// }
+// console.log(vowelsNum('hey there how are you'));
 
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
-//update your rock papers sissors code below to take a prompt from a user using the window object
-
-// just a placeholder for tomorrow
-
-// let rock = 'rock';
-// let paper = 'paper';
-// let scissors = 'scissors';
-// const random = Math.random();
-
-// function game(choice) {
-//     if (choice === rock) {
-//         if (random <= .999 && random > .666) {
-//             return rock = true;
-//         } else {
-//             return rock = false;
-//         }
-//     } else if (choice === paper) {
-//         if (random <= .666 && random > .333) {
-//             return paper = true;
-//         } else {
-//             return paper = false;
-//         }
-//     } else if (choice === scissors) {
-//         if (random <= .333 && random > 0) {
-//             return scissors = true;
-//         } else {
-//             return scissors = false;
-//         }
-//     }
-// }
-
-// console.log(game('rock'));
+// update your rock papers sissors code below to take a prompt from a user using the window object
